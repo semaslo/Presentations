@@ -1,0 +1,6 @@
+﻿VERSION BUILD=8850919 RECORDER=FX
+TAB T=1
+URL GOTO=http://finance.yahoo.com/q?s=goog&type=2button&fr=uh3_finance_web&uhb=uhb2
+ADD !EXTRACT {{!NOW}}
+TAG POS=1 TYPE=SPAN ATTR=ID:yfs_l84_goog EXTRACT=TXT
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=extract3.csv
